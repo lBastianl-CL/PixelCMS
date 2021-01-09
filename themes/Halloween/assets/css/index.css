@@ -1,0 +1,162 @@
+@font-face{font-family:'Exo 2';font-style:normal;font-weight:400;src:local('Exo 2'),local('Exo2-Regular'),url(https://fonts.gstatic.com/s/exo2/v3/pEbpp8gu02JrI5SDG9jj6g.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Exo 2';font-style:normal;font-weight:400;src:local('Exo 2'),local('Exo2-Regular'),url(https://fonts.gstatic.com/s/exo2/v3/sZoRRDfBcJL9e6dHdMU_Tg.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Exo 2';font-style:normal;font-weight:400;src:local('Exo 2'),local('Exo2-Regular'),url(https://fonts.gstatic.com/s/exo2/v3/-A4eIjQkAwKL411pgtQ4VA.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215;}
+body {
+	background: #eee;
+}
+
+html {
+	font-family: 'Exo 2';
+}
+
+
+.onlineBox {
+    height: 41px;
+    position: absolute;
+    top: 74px;
+    left: 620px;
+    background: #222;
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.15);
+    font: 13px 'Roboto';
+    border-radius: 2px;
+    line-height: 41px;
+    padding: 0 20px;
+    color: white;
+}
+
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+}
+animate.min.css:6
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.onlineBox .arrow {
+    border-style: solid;
+    border-color: transparent #222 transparent transparent;
+    position: absolute;
+    border-width: 10px;
+    left: -17px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.contentBox {
+	height: auto;
+	width: 100%;
+	padding: 7px;
+	background: #fff;
+	    box-shadow: 0 2px 5px 0 rgba(0,0,0,.10), 0 2px 10px 0 rgba(0,0,0,.16);
+		border-radius: 3px;
+		margin-bottom:10px;
+		font-size:13px;
+}
+
+.nav-wrapper .logo {position:absolute;width:216px;height:60px;margin-left:313px;margin-top:80px;margin-bottom:10px;transition: all .3s;z-index: 400;}
+	
+.nav-wrapper .logo:hover {
+opacity: 0.5
+}
+
+.box-avatar{text-align:center;width:36px;height:36px;border-radius:100px;overflow:hidden;float:left;margin:4px}.box-avatar.no{background-color:#8a2525;border:2px solid #B31F17}.box-avatar.yes{background-color:#0b7350;border:2px solid #4EA11F}.btn-circle{width:30px;height:30px;text-align:center;padding:6px 0;font-size:12px;line-height:1.428571429;border-radius:15px}.btn-circle.btn-lg{width:50px;height:50px;padding:10px 16px;font-size:18px;line-height:1.33;border-radius:25px}.btn-circle.btn-xl{width:70px;height:70px;padding:10px 16px;font-size:24px;line-height:1.33;border-radius:35px}.btn-circle.positivo.active,.btn-circle.positivo:active{border-color:#53B11E}.btn-circle.positivo.hover,.btn-circle.positivo:hover{border-color:#85BB66}.btn-circle.negativo.active,.btn-circle.negativo:active{border-color:#901C16}.btn-circle.negativo.hover,.btn-circle.negativo:hover{border-color:#A22620}.box-avatar >img{margin-left:-16px;margin-top:-30px;border-radius:100px;-webkit-transition:all .8s cubic-bezier(.190,1.000,.220,1.000);-moz-transition:all .8s cubic-bezier(.190,1.000,.220,1.000);-ms-transition:all .8s cubic-bezier(.190,1.000,.220,1.000);-o-transition:all .8s cubic-bezier(.190,1.000,.220,1.000);transition:all .8s cubic-bezier(.190,1.000,.220,1.000)}.box-avatar:hover >img{margin-top:-20px;-webkit-transition:all .8s cubic-bezier(.190,1.000,.220,1.000);-moz-transition:all .8s cubic-bezier(.190,1.000,.220,1.000);-ms-transition:all .8s cubic-bezier(.190,1.000,.220,1.000);-o-transition:all .8s cubic-bezier(.190,1.000,.220,1.000);transition:all .8s cubic-bezier(.190,1.000,.220,1.000)}
+
+.errorBox {
+	height: auto;
+	width: 100%;
+	padding: 7px;
+	background: #CB5757;
+	border-radius: 3px;
+	margin-top:15px;
+	color:#fff;
+	border-bottom: 2px solid #783232;
+}
+
+.successBox {
+	height: auto;
+	width: 100%;
+	padding: 7px;
+	background: #31B404;
+	border-radius: 3px;
+	margin-top:15px;
+	color:#fff;
+	border-bottom: 2px solid #0E4700;
+}
+
+.contentTitle {
+	width:100%;
+	height:30px;
+	border-bottom:2px solid #e3e3e3;
+	font-size:16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom:5px;
+}
+
+.menuSettings {
+	width:100%;
+	height:auto;
+	padding:5px;
+	background:#eee;
+	margin-top:6px;
+	border-radius:4px;
+	list-style-type: none;
+}
+
+.has-success {
+	border: 1px solid green;
+}
+
+.has-error {
+	border: 1px solid red;
+}
+
+.menuSettings a {
+	color: #fff;
+}
+
+
+.menuSettings:hover {
+	background: #888;
+}
+
+.grid_9 {
+	width: 350px;
+}
+
+.grid_15 {
+	width: 590px;
+}
+
+            .details-autor{
+                background: #f0f0f0;
+                width: 100%;
+                height: 80px;
+                border-radius: 3px;
+            }
+
+			
+
+.logo_footer {
+	background:url(../images/heibbologo.png?124) no-repeat;
+	width: 169px;
+	height: 55px;
+	float:right;
+	margin-top:-125px;
+	margin-right:150px;
+}
+
+.container {
+	margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+	width:960px;
+	position:relative;
+}
+
+#promo-box .enter-btn.closed b{background-position:0 -108px}#promo-box{width:100%;height:200px;float:left;margin-bottom:22px;margin-left:1px;position:relative}#promo-box #promo-bullets{margin-top:-12px;position:absolute;left:0;top:0;width:100%;height:12px;padding:0 0 0 10px;z-index:30}#promo-box #promo-bullets a{background-color:#fff;float:left;height:13px;margin-right:6px;text-indent:-9999px;width:13px;border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px;opacity:.3;outline:0;margin-top:180px;cursor:pointer}#bottom_promo{background:rgba(0,0,0,.9);width:100%;position:absolute;z-index:0;left:0;bottom:0}#promo-box #promo-bullets a.active,#promo-box #promo-bullets a:hover{opacity:1}#promo-box .promo-container{position:absolute;left:0;top:0;width:305px;height:143px;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;padding:45px 0 0 20px;margin-bottom:5px}#promo-box .promo-content{width:100%;color:#fff}#promo-box .promo-content .title{font-size:22px;font-weight:700;text-transform:uppercase;margin-bottom:15px;width:300px;margin-top:-23px}#promo-box .promo-content .body{font-size:14px;width:300px}#promo-box .enter-hotel-btn{position:absolute;bottom:5px;right:8px}#promo-box .enter-hotel-btn .enter-btn{white-space:nowrap}#newsButton{border-radius:2px;-webkit-border-radius:2px;-moz-border-radius:2px;right:0;margin-right:8px;bottom:4px;position:absolute;background:#93c54b;padding:10px;text-decoration:none}
+
+strong {
+font-weight:bold;}

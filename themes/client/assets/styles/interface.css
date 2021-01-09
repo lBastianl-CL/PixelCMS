@@ -1,0 +1,456 @@
+
+#interface-bar
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #333635;
+    border-style: solid none none none;
+    background-color: #252523;
+    z-index: 10000000;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #878787;
+    border: 0px none #ffffff;
+    border-radius: 39px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #c7c7c7;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #c7c7c7;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #c7c7c7;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+    }
+
+.overPixel
+{
+    z-index: 10000000;
+}
+
+#interface-icons
+{
+    width: 500px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+#interface-icon
+{
+    width: 60px;
+    height: 50px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#interface-icon:hover
+{
+    background-color: #454037;
+}
+
+.interface-icon-rooms
+{
+    background-image: url('../images/rooms.png');
+}
+
+.interface-icon-shop
+{
+    background-image: url('../images/catalog.png');
+}
+
+.interface-icon-inventory
+{
+    background-image: url('../images/inventory.png');
+}
+
+.interface-icon-friends
+{
+    background-image: url('../images/friend_all.png');
+}
+
+.habboButton
+{
+    background-color: #009000;
+    box-shadow: inset 0 0 0 3px #009000, inset 0 16px #00a100;
+    border-radius: 6px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-bottom-width: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#interface-help-button
+{
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    width: 50px;
+    height: 18px;
+    background-color:#22577a;
+    box-shadow: inset 0 0 0 3px #22577a, inset 0 11px #336888;
+    border: 1px solid #508095;
+    border-radius: 3px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+}
+
+#interface-help-button:hover
+{
+    font-size: 13px;
+}
+
+#interface-coins-icon
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 17px;
+    right: 80px;
+    background-image: url('../images/credit.png');
+}
+
+#interface-coins
+{
+    position: absolute;
+    width: 70px;
+    height: 15px;
+    top: 18px;
+    right: 100px;
+    color: #caab5a;
+    text-align: right;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pixel-header
+{
+    height: 30px;
+    background-color: #4e93b5;
+    box-shadow: inset 0 0 0 4px #4e93b5, inset 0 17px #5999b9;
+    border-radius: 8px 8px 0px 0px;
+    border: 1px solid black;
+    border-style: solid solid none solid;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.pixel-header-close
+{
+    width: 30px;
+    height: 30px;
+    color: #3a7591;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-image: url('../images/close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pixel-box
+{
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
+    border: 1px solid black;
+    border-style: none solid solid solid;
+}
+
+.pixel-header-close:hover
+{
+    background-image: url('../images/close_in.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#interface-navigator
+{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top:100px;
+    left:100px;
+    display: none;
+}
+
+#interface-navigator-title
+{
+    width: 398px;
+}
+
+#interface-navigator-container
+{
+    width: 398px;
+    height: 438px;
+}
+
+#interface-navigator-options
+{
+    border: 1px solid black;
+    border-style: none solid none solid;
+    width: 398px;
+    height: 30px;
+    background: linear-gradient(to bottom, #f2f2f2 0%, #f2f2f2 50%, #e8e8e8 50%, #e8e8e8 100%);
+}
+
+.interface-navigator-option
+{
+    width: auto;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 5px;
+    border: 1px solid #d4d4d4;
+    border-style: none solid none none;
+}
+
+.interface-navigator-option-selected
+{
+    background-color: white;
+}
+
+#interface-navigator-rooms
+{
+    position: absolute;
+    width: 398px;
+    height: 400px;
+}
+
+#interface-navigator-room
+{
+    width: 378px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: whitesmoke;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+#interface-navigator-room-user
+{
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+    height: 20px;
+    width: 50px;
+    background-color: green;
+    border-radius: 4px;
+    background-image: url('../images/USERS.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    text-align: right;
+    line-height: 20px;
+    padding-right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+#interface-navigator-room-create
+{
+    position: absolute;
+    top: 464px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    width: 200px;
+    height: 30px;
+    background-color: #00871d;
+    box-shadow: inset 0 0 0 4px #00871d, inset 0 17px #00a122;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#interface-navigator-room-create:hover
+{
+    background-color: #00a122;
+}
+
+
+#interface-inventory
+{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 354px;
+    height: 332px;
+    display: none;
+}
+
+#interface-inventory-title
+{
+    width: 352px;
+}
+
+#interface-inventory-container
+{
+    position: absolute;
+    width: 352px;
+    height: 300px;   
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+.interface-inventory-item
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    float: left;
+}
+
+.interface-inventory-item-count
+{
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    line-height: 14px;
+    background-color: red;
+    font-size: 10px;
+    margin-top: 38px;
+    margin-left: 26px;
+    text-align: center;
+    color: white;
+}
+
+#interface-infostand-item
+{
+    width: 200px;
+    height: 200px;
+    background-color: #454545;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 95px;
+    right: 10px;
+    display: none;
+}
+
+#interface-infostand-item-image
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#interface-infostand-item-title
+{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#interface-infostand-item-description
+{
+    width: 180px;
+    height: 70px;
+    line-height: 15px;
+    font-size: 12px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: left;
+    color: white;
+    padding: 10px;
+}
+
+#interface-infostand-item-pick
+{
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;background-color: #454545;
+    border-radius: 4px;
+    right: 0px;
+    margin-top: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#interface-infostand-item-rotate
+{
+    position: absolute;
+    width: 61px;
+    height: 25px;
+    line-height: 25px;background-color: #454545;
+    border-radius: 4px;
+    right: 69px;
+    margin-top: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#interface-infostand-item-use
+{
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;background-color: #454545;
+    border-radius: 4px;
+    right: 139px;
+    margin-top: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
